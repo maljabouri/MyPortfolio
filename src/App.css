@@ -177,3 +177,9 @@ header {
 .contact {
   border: 2px solid green;
 }
+
+
+.link {
+  color: rgb(9, 225, 52);
+  text-decoration: underline;
+}
