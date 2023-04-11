@@ -36,3 +36,140 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: hsl(0, 0%, 11%);
+  font-family: 'Bebas Neue', sans-serif;
+  color: hsl(0, 0%, 100%);
+  border: 2px solid white;
+}
+
+header {
+  color: hsl(135, 42%, 50%);
+  margin-left: 35px;
+}
+
+
+#projects-header {
+  text-align: center;
+}
+
+.app-container {
+  display: flex;
+  margin: 20px;
+  align-items: flex-start;
+}
+
+.column.skills {
+  flex: 1;
+  padding: 20px;
+  border: 2px solid #ccc;
+  margin: 10px;
+}
+
+.contact-section {
+  padding: 20px;
+  border: 2px solid #ccc;
+  margin: 10px;
+}
+
+
+.column.brand-statement {
+  flex: 1;
+  padding: 20px;
+  border: 2px solid #ccc;
+  margin: 10px;
+  display: inline-block;
+}
+
+
+.skill-rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-row {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .skill-row {
+    width: calc(33.3333% - 20px);
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .skill-row:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.project-thumbnails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-thumbnail {
+  margin: 10px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.project-thumbnail:hover img {
+  transform: scale(1.1);
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  background-color: #414040;
+  text-align: center;
+}
+
+.project-details h3 {
+  margin-top: 0;
+}
+
+.project-details p {
+  margin-bottom: 0;
+}
+
+.app-container {
+  display: flex;
+  margin: 20px;
+  align-items: flex-start;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+}
+
+.experience {
+  border: 2px solid #ccc;
+}
+
+.interests {
+  border: 2px solid blue;
+}
+
+.contact {
+  border: 2px solid green;
+}
