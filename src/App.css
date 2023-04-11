@@ -1,6 +1,9 @@
 .App {
   text-align: center;
+  width: 40%;
 }
+
+
 
 .App-logo {
   height: 40vmin;
@@ -42,6 +45,7 @@ body {
   font-family: 'Bebas Neue', sans-serif;
   color: hsl(0, 0%, 100%);
   border: 2px solid white;
+  zoom: 150%;
 }
 
 header {

@@ -1,13 +1,16 @@
 import React from 'react';
 
 function ProjectDetails({ project }) {
-  const { title, description } = project;
+  const { title, description, url } = project;
 
   return (
     <div className="project-details">
       <h3>{title}</h3>
       <p>{description}</p>
-      <a href="#">View Project</a>
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        View Project
+      </a>
+
     </div>
   );
 }
